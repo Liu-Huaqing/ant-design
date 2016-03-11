@@ -54,6 +54,9 @@ module.exports = {
       loader: ExtractTextPlugin.extract(
         'css?sourceMap&-minimize!' + 'postcss-loader'
       )
+    }, {
+      test: /\.(ttf|eot|svg|woff(2)?)(\?(.)+)?$/,
+      loader: 'file-loader'
     }]
   },
 

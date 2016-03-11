@@ -91,7 +91,7 @@ exports.middlewares = [
   },
   {
     name: 'webpackDevMiddleware',
-    filter: /\.(js|css|json)(\.map)?(\?.*)?$/,
+    filter: /\.(js|css|json|eot|woff|svg|ttf)(\.map)?(\?.*)?$/,
     handle: function(req, res, next) {
       handler = handler || webpackMiddleware(webpackCompiler, {
         publicPath: webpackConfig.output.publicPath,
